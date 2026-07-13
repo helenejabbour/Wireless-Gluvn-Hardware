@@ -23,7 +23,7 @@ The collected data is transmitted over **Bluetooth Low Energy (BLE)** to the mai
 
 # Features
 
-- Custom PCB designed in KiCad
+- Custom PCB designed in Autodesk Fusion
 - Compact wearable design
 - M5Stick C Plus 1.1 support
 - ESP32 BLE connectivity
@@ -232,29 +232,18 @@ This repository includes everything required for fabrication.
 
 Included files:
 
-- KiCad project
+- Autodesk Fusion project
 - Schematics
 - Gerber files
 - Drill files
-- Bill of Materials
-- Pick-and-Place files
 - 3D models
 - Assembly drawings
-
-The board can be manufactured by any PCB fabrication service such as:
-
-- JLCPCB
-- PCBWay
-- OSH Park
-- Seeed Fusion
-
----
 
 # Assembly
 
 ## 1. Manufacture the PCB
 
-Use the provided Gerber files or generate your own from KiCad.
+Use the provided Gerber files or generate your own from Autodesk Fusion.
 
 ---
 
@@ -264,7 +253,6 @@ Install:
 
 - Resistors
 - Capacitors
-- Decoupling capacitors
 
 ---
 
@@ -301,19 +289,10 @@ Verify correct channel mapping.
 
 ---
 
-## 7. Upload Firmware
+## 7. Upload the firmware and test the software
 
-Firmware is **not included** in this repository.
+Please use the firmware and software from the main GLUVN repository.
 
-Please use the firmware from the main GLUVN repository.
-
----
-
-## 8. Calibrate
-
-Run the calibration utility from the software repository before first use.
-
----
 
 # Design Goals
 
@@ -335,25 +314,7 @@ The hardware was designed with the following priorities:
 - Designed specifically for the M5Stick C Plus 1.1
 - Requires calibration before use
 - Uses one analog multiplexer per glove
-- Not waterproof
 - Sensor performance depends on glove construction
-
----
-
-# Future Improvements
-
-Possible future revisions include:
-
-- ESP32-S3 support
-- Higher resolution ADC
-- Integrated battery charging
-- Capacitive touch sensing
-- Hall-effect finger sensors
-- Flexible PCB version
-- Wireless charging
-- Dedicated enclosure
-- Four-layer PCB
-- Integrated haptic feedback
 
 ---
 
@@ -385,32 +346,9 @@ The following images are recommended for this repository.
 
 ---
 
-# Contributing
-
-Contributions are welcome.
-
-Examples include:
-
-- PCB improvements
-- Hardware revisions
-- Assembly documentation
-- Better sensor integration
-- Wearable design improvements
-- Cost reduction
-- Testing and validation
-
-Please open an Issue or Pull Request to discuss proposed changes.
-
----
-
-# License
-
-This hardware design is released under the **MIT License** unless otherwise specified.
-
----
 
 # Acknowledgments
 
-This project is part of the **M5-GLUVN** initiative, which explores expressive wearable musical interfaces by combining custom electronics, embedded systems, Bluetooth communication, and real-time MIDI generation.
+This project is part of the **M5-GLUVN** initiative at the Music Intelligence Lab, which explores expressive wearable musical interfaces by combining custom electronics, embedded systems, Bluetooth communication, and real-time MIDI generation.
 
 If you build your own version, feel free to share it—we'd love to see what you create!
