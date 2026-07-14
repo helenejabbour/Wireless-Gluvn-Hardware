@@ -190,37 +190,46 @@ MUX SIG → ESP32 ADC
 GLUVN-Hardware/
 
 ├── pcb/
-│   ├── KiCad/
-│   ├── Gerbers/
-│   ├── Assembly/
-│   └── Manufacturing/
+│   ├── CAMOutputs/
+│       ├── GerberFiles/
+│       ├── Assembly/
+│       ├── ODBFiles/
+|       └── DrillFiles/
+│   ├── Electronics Design.f3z/
+│   ├── Schematic.fsch/
+│   ├── PCB.fbrd/
+|   ├── 3D_PCB.f3d/
+│   ├── Design-Drawing.pdf/
+│   ├── Bottom layer.pdf/
+│   └── Top layer.pdf/
 │
-├── schematics/
-│   ├── PDF/
-│   └── Source/
-│
-├── bom/
-│   ├── BOM.csv
-│   └── BOM.xlsx
-│
+├── enclosure_box/
+│   ├── Enclosure.3mf/
+│   └── Enclosure_Assembly Drawing.pdf/
+|
 ├── docs/
-│   ├── Assembly_Guide.md
-│   ├── Wiring.md
-│   ├── Design_Notes.md
-│   └── Testing.md
-│
-├── enclosure/
-│   ├── STEP/
-│   ├── STL/
-│   └── CAD/
+│   ├── Datasheets
+│       ├── Flex Adafruit 1070.pdf/
+│       ├── FSR Adafruit 166.pdf/
+│       ├── FSR Adafruit 166_v2.pdf/
+│       ├── M5Stick Cplus.pdf/
+|       └── MPU-6886.pdf/
+│   ├── m5stick_dimensions.png
+│   ├── gluvn_design.pdf
+│   └── Pins and sensor mapping .pdf
 │
 ├── images/
-│   ├── PCB_Render_Front.png
-│   ├── PCB_Render_Back.png
-│   ├── Assembled_Board.jpg
-│   ├── Schematic.png
-│   └── System_Diagram.png
+│   ├── PCB/
+|      ├── Schematic.png/
+|      ├── 2D-Bottom-Layer.png/
+|      ├── 2D-Top-Layer.png/
+|      ├── 3D-Render-Bottom.png/
+|      └── 3D-Render-Top.png/
 │
+│   ├── Enclosure_Box/
+|      ├── Enclosure_Assembly_Bottom.png/
+|      └── Enclosure_Assembly_Top.png/
+|
 └── README.md
 ```
 
@@ -327,22 +336,7 @@ The complete project consists of multiple repositories:
 | Repository | Description |
 |------------|-------------|
 | **GLUVN-Hardware** | PCB, schematics, manufacturing files |
-| **GLUVN Firmware** | ESP32 firmware for the M5Stick |
-| **GLUVN Software** | Python application, BLE communication, calibration tools, MIDI engine, visualization |
-
----
-
-# Images
-
-The following images are recommended for this repository.
-
-- Complete assembled system
-- Front PCB render
-- Back PCB render
-- Schematic overview
-- System architecture
-- Wiring diagram
-- Finished wearable glove
+| **GLUVN-M5** | ESP32 firmware for the M5Stick, Python application, BLE communication, calibration tools, MIDI engine, visualization |
 
 ---
 
