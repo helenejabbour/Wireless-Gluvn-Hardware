@@ -205,6 +205,7 @@ GLUVN-Hardware/
 │
 ├── enclosure_box/
 │   ├── Enclosure.3mf/
+│   ├── Enclosure_Assembly.f3z/
 │   └── Enclosure_Assembly Drawing.pdf/
 |
 ├── docs/
